@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: yyc-smart-office
+  namespace: yyc
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    # Optional: enable sticky sessions if needed
+    # nginx.ingress.kubernetes.io/affinity: cookie
+spec:
+  rules:
+    - host: yyc.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: yyc-smart-office
+                port:
+                  number: 80

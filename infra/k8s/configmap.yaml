@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: yyc-smart-office-config
+  namespace: yyc
+data:
+  NODE_ENV: "production"
+  PORT: "3000"
+  # Add other envs as needed, e.g. DB_URL, JWT_SECRET, etc.

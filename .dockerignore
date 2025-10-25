@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+
+# Next.js build cache
+.next/cache
+
+# Logs
+logs
+*.log
+
+# Test coverage and artifacts
+coverage
+junit.xml
+
+# Local envs
+.env*
+.vercel
+
+# Git
+.git

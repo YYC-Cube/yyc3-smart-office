@@ -1,0 +1,2 @@
+2025-10-25T04:39:46.264Z [INFO] 登录请求到达 {"ip":"::1","contentType":"application/json","hasCsrfHeader":true}
+2025-10-25T04:39:46.269Z [INFO] 登录成功 {"ip":"::1","username":"admin"}

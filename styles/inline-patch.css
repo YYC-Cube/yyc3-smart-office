@@ -1,0 +1,49 @@
+@keyframes progressBar {
+  0% {
+    filter: brightness(1) blur(0px);
+  }
+  30% {
+    filter: brightness(1.2) blur(0.5px);
+  }
+  60% {
+    filter: brightness(1.1) blur(1px);
+  }
+  100% {
+    filter: brightness(1) blur(0px);
+  }
+}
+.animate-progress-bar {
+  animation: progressBar 1.5s infinite linear;
+}
+@keyframes progressBar {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+.animate-progress-bar {
+  animation: progressBar 1.2s infinite linear;
+}
+.logo-appear-delay-03 {
+  animation-delay: 0.3s !important;
+}
+.logo-appear-delay-06 {
+  animation-delay: 0.6s !important;
+}
+.logo-container-sidebar {
+  gap: 0.5rem;
+}
+.logo-container-default {
+  gap: 0.75rem;
+}
+.logo-img-object-contain {
+  object-fit: contain;
+}
+.organization-chart-container {
+  height: calc(100vh - 200px);
+}

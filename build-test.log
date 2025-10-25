@@ -1,0 +1,137 @@
+
+> my-v0-project@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.16
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+   Generating static pages (0/38) ...
+状态检查错误: B [Error]: Dynamic server usage: Route /api/auth/status couldn't be rendered statically because it used `request.cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21777)
+    at Object.get (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+    at c (/Users/my/YYC-smart-office/.next/server/app/api/auth/status/route.js:1:1085)
+    at /Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:37016
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+    at NoopContextManager.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+  description: "Route /api/auth/status couldn't be rendered statically because it used `request.cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (9/38) 
+   Generating static pages (18/38) 
+   Generating static pages (28/38) 
+API处理错误: B [Error]: Dynamic server usage: Route /api/permissions/check couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21777)
+    at Object.get (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+    at /Users/my/YYC-smart-office/.next/server/app/api/reminders/route.js:1:2568
+    at /Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:37016
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+    at NoopContextManager.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+  description: "Route /api/permissions/check couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+API处理错误: B [Error]: Dynamic server usage: Route /api/auth/verify-env couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21777)
+    at Object.get (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+    at /Users/my/YYC-smart-office/.next/server/app/api/db/status/route.js:1:2647
+    at /Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:37016
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+    at NoopContextManager.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+  description: "Route /api/auth/verify-env couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+API处理错误: B [Error]: Dynamic server usage: Route /api/auth/csrf-token couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21777)
+    at Object.get (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+    at /Users/my/YYC-smart-office/.next/server/app/api/permissions/check/route.js:1:3386
+    at /Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:37016
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+    at NoopContextManager.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+  description: "Route /api/auth/csrf-token couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+API处理错误: B [Error]: Dynamic server usage: Route /api/db/status couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:21777)
+    at Object.get (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29137)
+    at /Users/my/YYC-smart-office/.next/server/app/api/auth/csrf-token/route.js:1:1988
+    at /Users/my/YYC-smart-office/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:37016
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+    at NoopContextManager.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/Users/my/YYC-smart-office/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854)
+    at /Users/my/YYC-smart-office/node_modules/next/dist/server/lib/trace/tracer.js:122:103 {
+  description: "Route /api/db/status couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ✓ Generating static pages (38/38)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    11.7 kB         290 kB
+├ ○ /_not-found                          883 B          88.6 kB
+├ ○ /ai-assistant                        3.32 kB        97.8 kB
+├ ○ /ai-maintenance                      16.7 kB         141 kB
+├ ƒ /api/auth/csrf-token                 0 B                0 B
+├ ƒ /api/auth/login                      0 B                0 B
+├ ƒ /api/auth/logout                     0 B                0 B
+├ ƒ /api/auth/register                   0 B                0 B
+├ ƒ /api/auth/reset-password             0 B                0 B
+├ ƒ /api/auth/status                     0 B                0 B
+├ ƒ /api/auth/verify-env                 0 B                0 B
+├ ƒ /api/db/status                       0 B                0 B
+├ ƒ /api/permissions/check               0 B                0 B
+├ ƒ /api/reminders                       0 B                0 B
+├ ƒ /api/test-resilience                 0 B                0 B
+├ ○ /approval                            3.74 kB         128 kB
+├ ○ /cashier                             8.7 kB          111 kB
+├ ○ /chat                                4.77 kB        99.3 kB
+├ ○ /customer-followup                   4.55 kB          99 kB
+├ ○ /design-tools                        8.14 kB         133 kB
+├ ○ /diagnostics-test                    5.88 kB         118 kB
+├ ○ /documents                           16.9 kB         293 kB
+├ ○ /employee                            2.44 kB         102 kB
+├ ○ /inventory                           8.53 kB         111 kB
+├ ○ /login                               26.4 kB         283 kB
+├ ○ /logs                                6.62 kB         133 kB
+├ ○ /message-center                      9.88 kB         112 kB
+├ ○ /organization                        5.3 kB          125 kB
+├ ○ /position-settings                   4.85 kB         129 kB
+├ ○ /progress                            2.72 kB        97.2 kB
+├ ○ /schedule                            14.6 kB         152 kB
+├ ○ /settings                            7.16 kB         127 kB
+├ ○ /system-health                       3.8 kB          109 kB
+├ ○ /tab-container-test                  2.37 kB        96.9 kB
+├ ○ /timeline                            4.03 kB         128 kB
+└ ○ /users                               5.56 kB         247 kB
++ First Load JS shared by all            87.8 kB
+  ├ chunks/2117-d5c51b4606c177f1.js      31.7 kB
+  ├ chunks/fd9d1056-a1b5f3f689499d12.js  53.7 kB
+  └ other shared chunks (total)          2.35 kB
+
+
+ƒ Middleware                             42.8 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
