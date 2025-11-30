@@ -249,7 +249,7 @@ npm start
 如有任何问题或建议，请联系：
 
 - **邮箱**：admin@0379.email
-- **官方网站**：[https://www.yyc-office.com](https://www.yyc-office.com)
+- **GitHub**：https://github.com/YYC-Cube/yyc3-smart-office.git
 
 ## 📜 许可证
 
