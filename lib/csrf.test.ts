@@ -114,11 +114,11 @@ describe('lib/csrf.ts', () => {
     });
 
     const prevEnv = process.env.NODE_ENV;
-    process.env.NODE_ENV = 'development';
+    Object.defineProperty(process.env, 'NODE_ENV', { value: 'development', writable: true });
     try {
       await expect(validateRequestCsrfToken(req)).resolves.toBe(true);
     } finally {
-      process.env.NODE_ENV = prevEnv;
+      Object.defineProperty(process.env, 'NODE_ENV', { value: prevEnv, writable: true });
     }
   });
 

@@ -1,5 +1,3 @@
-import { describe, it, expect, jest } from '@jest/globals';
-
 // 这个测试文件专注于验证resilience-middleware的核心功能
 
 interface ApiRequest {
