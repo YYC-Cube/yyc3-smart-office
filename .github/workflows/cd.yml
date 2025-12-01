@@ -79,8 +79,10 @@ jobs:
     steps:
       - name: Check if KUBE_CONFIG is set
         id: check
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         run: |
-          if [ -n "${{ secrets.KUBE_CONFIG }}" ]; then
+          if [ -n "${KUBE_CONFIG}" ]; then
             echo "has_kube_config=true" >> $GITHUB_OUTPUT
           else
             echo "has_kube_config=false" >> $GITHUB_OUTPUT
