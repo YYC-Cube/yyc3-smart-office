@@ -74,6 +74,7 @@ jobs:
 
   check-secrets:
     runs-on: ubuntu-latest
+    permissions: {}
     outputs:
       has_kube_config: ${{ steps.check.outputs.has_kube_config }}
     steps:
@@ -91,6 +92,8 @@ jobs:
   deploy-kubernetes:
     needs: [build-and-push-image, check-secrets]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     if: needs.check-secrets.outputs.has_kube_config == 'true'
     steps:
       - name: Checkout
